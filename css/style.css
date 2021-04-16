@@ -1,0 +1,236 @@
+/*
+Keyword colors can be found at http://colours.neilorangepeel.com/
+*/
+
+/* border-box fix */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  h1, h2 {
+    text-transform: uppercase;
+  }
+  h3{
+    font-size: 0.8rem;
+  }
+  
+  /* Add padding to all of the .container child elements */
+  .container > * {
+    padding: 20px;
+  }
+  .container {
+    /*color:rgb(63, 58, 58);*/
+    color:white;
+    font-family: helvetica, arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;   
+    
+  }
+  
+  header {
+    background: #45798A;
+    flex: 1 0 100%;
+    order: 1;  
+  }
+  #imglogo{
+    width: 60%;
+    float:left;
+  }
+  #imgsubscribe{
+    width: 15%;
+    float:right;
+  }
+  #imghome{
+    width: 5%;
+    float:right;
+  }
+  
+  
+  main {  
+    /*background: slategray;*/
+    order: 3;
+    flex: 1 1 500px;
+    
+  }
+  main h2{
+    color: #a3620a;
+  }
+  main p{
+    color: #545454;
+    /*background-color:white;
+    padding: 10px;  
+    opacity: 0.6;
+    display: inline-block;*/
+    font-size: smaller;    
+  }
+  main img{
+    max-width:100%;    
+
+  }
+  
+  nav {
+    /*background:#545454;*/
+    order: 2;
+    flex: 1 0 200px;
+    
+  }
+  .sidebar{
+    text-align: center;
+    background: #a3620a;
+  }
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color:white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #545454;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #45798A;
+    color: white;
+  }
+  
+  
+  aside {
+    background: #a3620a;
+    order: 4;
+    flex: 1 0 200px;    
+  }
+  aside img{
+    max-width:100%;   
+  }
+  aside a{
+      width: 100%;
+      display: inline-block;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  footer {
+    background: #45798A;
+    flex: 1 0 100%;
+    order: 5;
+    align-items: center;
+  }
+  
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+  }
+  .ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .ft-social-list img{
+    width: 30px;
+  }
+  
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    border-top: 1px #777 solid; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+  }
+  iframe{
+    width:100%;
+     
+  }
+  
+  /*FORM CSS*/
+  form{
+    color: black;
+    align-items: center;
+  }
+  form h1,h3{
+    text-align: center;
+  }
+  form button, input, select, textarea {
+    font-family: inherit;
+   	font-size: 100%
+   }
+   input, textarea, select {
+   	-webkit-box-sizing: border-box;
+   	box-sizing: border-box;
+     border-radius: 7px;
+   }
+ 
+  input[type="submit"]:focus, #styled button[type="submit"]:focus {
+    border: 2px solid green;
+    outline:none;
+  }
+  input[type="submit"]:hover, #styled button[type="submit"]:hover {
+    border: 2px solid red;
+  }
+  input[type="submit"]:active, #styled button[type="submit"]:active {
+    background-color: orange;
+  }
+
+
+   label {
+   	display: block;
+   }
+   input[type="checkbox"]+label {
+   	display: inline;
+   }
+   fieldset {
+   	border-width: 0;
+   	padding: 0;
+   }
+   input[type="text"], input[type="email"], input[type="tel"] {
+   	width: 90%;
+   	margin: .2em auto .8em auto;
+   }
+   #zip {
+   	width: auto;
+   }
+   select, fieldset, legend {
+   	margin: .2em auto .8em auto;
+   }
+   legend {
+   	margin-left: -.1em;
+   	font-weight: bold;
+   }
+   @media (min-width: 30em) {
+   	label {
+   		display: inline-block;
+   		width: 10em;
+   	}
+   	input[type="text"], input[type="email"], input[type="tel"] {
+   		width: 55%;
+   	}
+    
+   textarea {
+      
+      width: 300px;
+      height: 150px;
+     }
+    
+   }
